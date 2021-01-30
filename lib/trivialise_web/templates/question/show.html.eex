@@ -1,0 +1,23 @@
+<h1>Show Question</h1>
+
+<ul>
+
+  <li>
+    <strong>Question:</strong>
+    <%= @question.question %>
+  </li>
+
+  <li>
+    <strong>Points:</strong>
+    <%= @question.points %>
+  </li>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @question.type %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.question_path(@conn, :edit, @question) %></span>
+<span><%= link "Back", to: Routes.question_path(@conn, :index) %></span>
